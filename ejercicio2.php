@@ -7,23 +7,17 @@
     <h1>Calculadora de precios de gaseosas</h1>
 
     <?php
-    // Obtener los valores ingresados por el usuario
     $precioActual = $_POST["precioActual"];
     $cantidad = $_POST["cantidad"];
-
-    // Calcular el nuevo precio con el descuento del 5%
+    
     $nuevoPrecio = $precioActual * 0.95;
 
-    // Calcular el importe de la compra sin el descuento
     $importeCompra = $precioActual * $cantidad;
 
-    // Calcular el importe del descuento del 7%
     $importeDescuento = $importeCompra * 0.07;
 
-    // Calcular el importe a pagar con el descuento
     $importePagar = $importeCompra - $importeDescuento;
 
-    // Calcular la cantidad de caramelos obsequiados
     $obsequio = $cantidad * 2;
     ?>
 
